@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="MenuSuperior">
+            <div class="Logo">
+                <img src="./img/logoHotel.png" alt="Logo">
+            </div>
+            <div class="Lista">
+                <li><a href="">Home</a></li>
+                <li><a href="#quartos">Quartos</a></li>
+                <li><a href="#Localizacao">Onde estamos</a></li>
+                <li><a href="#espacofooter">Sobre nós</a></li>
+
+
+            </div>
+        </div>
+    </header>
+    <div id="imagemPrincipal">
+
+        <video class="video" autoplay loop muted>
+
+            <source src="./img/pexels-pavel-danilyuk-7320535 (Original).mp4" type="video/mp4">
+        </video>
+
+        <!-- <img src="./img/hotel1.png" alt="" id="ImagemDeFundo"> -->
+        <div class="sombraimg"></div>
+
+    </div>
+    <section class="conteudo">
+        <div class="CampodeFiltro">
+            <div class="barradefiltragem">
+                <label for="optionHotel"></label>
+                <select id="optionHotel" name="optionHotel">
+                    <option value="hotel1">Hotel1</option>
+                    <option value="hotel2">Hotel2</option>
+                    <option value="hotel3">Hotel3</option>
+                    <option value="hotel4">Hotel4</option>
+                </select>
+                <input type="date" class="dataHospedagem" id="dataInicial">
+                <input type="date" class="dataHospedagem" id="dataFinal">
+                <label for="qntAdultos"></label>
+                <select id="SelectPessoas" name="qntAdultos">
+                    <option value="umAduto">1 Adulto</option>
+                    <option value="doisAdultos">2 Adultos</option>
+                    <option value="tresAdultos">3 Adultos</option>
+                    <option value="quatroAdultos">4 Adultos</option>
+                    <option value="cincoAdultos">5 Adultos</option>
+                    <option value="seisAdultos">6 Adultos</option>
+                    <option value="seteAdultos">7 Adultos</option>
+                    <option value="oitoAdultos">8 Adultos</option>
+                    <option value="noveAdultos">9 Adultos</option>
+                    <option value="dezAdultos">10 Adultos</option>
+                </select>
+                <label for="qntCriancas"></label>
+                <select id="SelectPessoas" name="qntCriancas">
+                    <option value="umaCrianca">1 Criança</option>
+                    <option value="duasCriancas">2 Crianças</option>
+                    <option value="tresCrianca">3 Crianças</option>
+                    <option value="quatroCriancas">4 Crianças</option>
+                    <option value="cincoCriancas">5 Crianças</option>
+
+                </select>
+                <input type="button" value="Reservar" class="reservabtn">
+
+            </div>
+
+        </div>
+  
+        <div class="hospedagens" id="quartos">
+            <h1 id="titulos">Nossos Quartos</h1>
+
+ 
+            <div class="optionhospedagens">
+             
+
+                <div class="option" id="option1">
+                    <div class="imageoption">
+                        <img id="imageoption1" src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8=" alt="">
+                     </div>
+
+                     <div class="iconesServicos">
+                        <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon name="wifi-sharp"></ion-icon></span><span><ion-icon name="restaurant-sharp"></ion-icon></span><span><ion-icon name="call-sharp"></ion-icon></span>    
+                        </div>
+                        <div class="descriptionOption">
+                            <h3>BANGALÔ FAMÍLIA</h3>
+                        <p>A maioria dos Bangalôs Junior ficam em frente a Piscina</p>
+                           
+                    <div id="Reservaoption">
+                        <div id="saibaMais">
+                            <input type="button" value="Saiba Mais" class="saibaMaisbtn">
+    
+                        </div>
+                    </div>   
+                    </div>
+
+                
+                    
+                </div>
+                
+                <div class="option" id="option1">
+                    <div class="imageoption">
+                        <img  id="imageoption1" src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8=" alt=""> </div>
+
+                        <div class="iconesServicos">
+                            <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon name="wifi-sharp"></ion-icon></span><span><ion-icon name="restaurant-sharp"></ion-icon></span><span><ion-icon name="call-sharp"></ion-icon></span>    
+                            </div>
+                        <div class="descriptionOption">
+                            <h3>BANGALÔ DELUXE COM BANHEIRA</h3>
+                        <p>
+                            Bangalô exclusivo com banheira</p>
+                            <div id="Reservaoption">
+                        
+                                <div id="saibaMais">
+                                    <input type="button" value="Saiba Mais" class="saibaMaisbtn">
+            
+                                </div>
+                        </div>
+                        
+                  
+                    </div>
+
+                    
+                </div>
+                
+                <div class="option" id="option1">
+                    <div class="imageoption">
+                        <img   id="imageoption1"src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8=" alt=""> </div>
+
+                        <div class="iconesServicos">
+                            <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon name="wifi-sharp"></ion-icon></span><span><ion-icon name="restaurant-sharp"></ion-icon></span><span><ion-icon name="call-sharp"></ion-icon></span>    
+                            </div>
+
+                        <div class="descriptionOption">
+                            <h3>SUÍTE DELUXE</h3>
+                        <p>Suíte com varanda</p>
+                        <div id="Reservaoption">
+                            <div id="saibaMais">
+                                <input type="button" value="Saiba Mais" class="saibaMaisbtn">
+        
+                            </div>
+                        </div>
+                        </div>
+                        
+                          
+                    
+                    
+                </div>
+                <div class="option" id="option1">
+                    <div class="imageoption">
+                        <img   src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8=" alt=""> </div>
+
+                        <div class="iconesServicos">
+                            <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon name="wifi-sharp"></ion-icon></span><span><ion-icon name="restaurant-sharp"></ion-icon></span><span><ion-icon name="call-sharp"></ion-icon></span>    
+                            </div>
+
+                    <div class="descriptionOption">
+                        <h3>SUÍTE CONFORT</h3>
+                        <p>
+                            Com varanda, sem janelas.</p>
+                            
+                    <div id="Reservaoption">
+                        <div id="saibaMais">
+                            <input type="button" value="Saiba Mais" class="saibaMaisbtn">
+    
+                        </div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+                <div class="option" id="option1">
+                    <div class="imageoption">
+                        <img   src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8=" alt=""> </div>
+                        <div class="iconesServicos">
+                            <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon name="wifi-sharp"></ion-icon></span><span><ion-icon name="restaurant-sharp"></ion-icon></span><span><ion-icon name="call-sharp"></ion-icon></span>    
+                            </div>
+
+
+                    <div class="descriptionOption">
+                        <h3>SUÍTE CONFORT</h3>
+                        <p>
+                            Com varanda, sem janelas.</p>
+                            <div id="Reservaoption">
+                                <div id="saibaMais">
+                                    <input type="button" value="Saiba Mais" class="saibaMaisbtn">
+            
+                                </div>
+                    </div>
+                    
+                    
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="option" id="option1">
+                    <div class="imageoption">
+                        <img   src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8=" alt=""> </div>
+
+                        <div class="iconesServicos">
+                            <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon name="wifi-sharp"></ion-icon></span><span><ion-icon name="restaurant-sharp"></ion-icon></span><span><ion-icon name="call-sharp"></ion-icon></span>    
+                            </div>
+
+                    <div class="descriptionOption">
+                        <h3>SUÍTE CONFORT</h3>
+                        <p>
+                            Com varanda, sem janelas.</p>
+                            <div id="Reservaoption">
+                                <div id="saibaMais">
+                                    <input type="button" value="Saiba Mais" class="saibaMaisbtn">
+            
+                                </div>
+                    </div>
+                    
+                    
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="option" id="option1">
+                    <div class="imageoption">
+                        <img   src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8=" alt=""> </div>
+
+
+                        <div class="iconesServicos">
+                            <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon name="wifi-sharp"></ion-icon></span><span><ion-icon name="restaurant-sharp"></ion-icon></span><span><ion-icon name="call-sharp"></ion-icon></span>    
+                            </div>
+                    <div class="descriptionOption">
+                        <h3>SUÍTE CONFORT</h3>
+                        <p>
+                            Com varanda, sem janelas.</p>
+                            <div id="Reservaoption">
+                                <div id="saibaMais">
+                                    <input type="button" value="Saiba Mais" class="saibaMaisbtn">
+            
+                                </div>
+                    </div>
+                    
+                    
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="option" id="option1">
+                    <div class="imageoption">
+                        <img   src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8=" alt=""> </div>
+
+                        <div class="iconesServicos">
+                            <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon name="wifi-sharp"></ion-icon></span><span><ion-icon name="restaurant-sharp"></ion-icon></span><span><ion-icon name="call-sharp"></ion-icon></span>    
+                            </div>
+
+                    <div class="descriptionOption">
+                   <h3>SUÍTE CONFORT</h3>
+                        <p>
+                            Com varanda, sem janelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit doloribus labore architecto quidem corrupti quae. Quaerat, dolorem. Sit, id dolorem. Laborum optio ipsum est quia illum temporibus voluptates amet necessitatibus.</p>
+                        
+                           
+                           
+                            <div id="Reservaoption">
+                                <div id="saibaMais">
+                                    <input type="button" value="Saiba Mais" class="saibaMaisbtn">
+            
+                                </div>
+                            </div>
+                            
+                    </div>
+                   
+                   
+                    
+                </div>
+
+                <div class="option" id="option1">
+                    <div class="imageoption">
+                        <img   src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8=" alt=""> </div>
+
+                        <div class="iconesServicos">
+                            <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon name="wifi-sharp"></ion-icon></span><span><ion-icon name="restaurant-sharp"></ion-icon></span><span><ion-icon name="call-sharp"></ion-icon></span>    
+                            </div>
+
+                    <div class="descriptionOption">
+                   <h3>SUÍTE CONFORT</h3>
+                        <p>
+                            Com varanda, sem janelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit doloribus labore architecto quidem corrupti quae. Quaerat, dolorem. Sit, id dolorem. Laborum optio ipsum est quia illum temporibus voluptates amet necessitatibus.</p>
+                        
+                           
+                           
+                            <div id="Reservaoption">
+                                <div id="saibaMais">
+                                    <input type="button" value="Saiba Mais" class="saibaMaisbtn">
+            
+                                </div>
+                            </div>
+                            
+                    </div>
+                    
+            </div>
+            
+            
+
+            
+           
+            
+
+        </div>
+
+    </section>
+            <div class="espacador"><div></div></div>
+    <div class="espacofooter" id="espacofooter">
+        <div class="espaco1"></div>
+        <div class="area">
+            <div id="item-1"></div>
+            <div id="item-2"></div>
+            <div id="item-3"><div class="contentParalax"> <img src="/img/logoHotel.png" alt=""> </div> <span>Bem-vindos à POSEIDON, onde cada experiência é uma jornada única e memorável. Fundada com a visão de oferecer mais do que simples produtos ou serviços, buscamos criar laços duradouros com nossos clientes, proporcionando momentos especiais e soluções que transcendem as expectativas.</span></div>
+            <div id="item-4"></div>
+            <div id="item-6"> </div>
+            <div id="item-7"></div>
+            <div id="item-8"></div>
+            <div id="item-10"></div>
+            <div id="item-11"></div>
+            <div id="item-12"></div>
+            <div id="item-13"></div>
+            <div id="item-14"></div>
+            <div id="item-15"></div>
+            <div id="item-16"></div>
+            <div id="item-17"></div>
+            <div id="item-18"></div>
+            <div id="item-19"><div class="contentParalax"> <h1>Instalações e Acomodações</h1> </div> <span>Cada quarto e suíte em nosso hotel foi projetado com atenção meticulosa aos detalhes, proporcionando um ambiente tranquilo e elegante para a sua estadia. Desfrute de amenidades modernas, camas luxuosas e vistas deslumbrantes do Mar.</span></div>
+            <div id="item-20"></div>
+            <div id="item-21"></div>
+            <div id="item-22"></div>
+            <div id="item-23"></div>
+            <div id="item-25"></div>
+            <div id="item-26"></div>
+            <div id="item-27"></div>
+            <div id="item-28"></div>
+            <div id="item-29"></div>
+
+        </div>
+        <div class="espaco2"></div>
+
+    </div>
+    <div class="espacador"><div></div></div>
+    <section class="Localizacao" id="Localizacao">
+        
+        <div class="LocalizacaoContent">
+            <div class="descriptionLocalizacao"> <h1>Descubra João pessoa</h1>
+            <span>Descubra João pessoa
+                Localizado estrategicamente, oferecemos fácil acesso às atrações locais, proporcionando aos nossos hóspedes uma autêntica experiência cultural durante a sua estadia.
+                
+                No POSEIDON, estamos ansiosos para recebê-lo e criar memórias duradouras. Sinta-se em casa, pois aqui, cada visita é mais do que uma estadia; é uma jornada excepcional.</span></div>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9448529467827!2d-34.843490624224806!3d-7.132375869956376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acc2b7ce38274f%3A0xee3d6668e7085bb9!2sA%20Hora%20Certa%20Paraibana%20-%20Rel%C3%B3gios%20de%20Ponto%20e%20Acesso!5e0!3m2!1spt-BR!2sbr!4v1703179522351!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+
+
+    <footer id="footer">
+        <div class="logofooter">   <img src="./img/logoHotel.png" alt=""></div>
+        <div class="Contatos"><h1>Contatos:</h1> <p>Telefone: 83 8888-8888</p><p>E-mail:teste@teste.com.br</p><p>Whatsapp:83 8888-8888</p></div>
+        <div class="formasdepagamentos"><div class="h1pagamentos">
+            <h1>Formas de Pagamentos:</h1>
+        </div>
+        <div class="iconespagamentos"><img src="/img/Cartões/visa.png" alt=""> <img src="/img/Cartões/mastercard.png" alt=""> <img src="/img/Cartões/elo.png" alt=""></div></div>
+        <div class="redessociais">
+            <div class="h1redesocial"><h1> Redes Sociais:</h1> </div>
+            <div class="iconesredesocial"> <img src="/img/redesocial/instagram.png" alt=""> <img src="/img/redesocial/x.png" alt=""> <img src="/img/redesocial/facebook.png" alt=""></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

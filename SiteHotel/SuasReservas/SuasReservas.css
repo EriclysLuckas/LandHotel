@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.TelaReservas{
+    display: flex;
+    align-self: center;
+    background-color: rgba(51, 104, 153, 0.966);
+    width: 80%;
+    height: 90%;
+
+}

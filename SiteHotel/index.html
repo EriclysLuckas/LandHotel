@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/SiteHotel/style.css">
+    <link rel="stylesheet" href="/SiteHotel/carrossel.css">
+
     <title>Teste</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +15,52 @@
 
 <body>
 
-    <dialog class="modal" >
+    <dialog class="modal">
+
         <div class="contentmodal">
-        <h2>Minha modal</h2>
-        <p>Essa é uma simples maneira de criar uma modal</p>
+               
+                <div class="headermodal">
+                    <h1 class="titulos" id="titulomodal">Detalhes do  Quarto</h1>
+                    <div class="fecharmodal"><ion-icon name="close-circle-outline" class="iconfechamodal"></ion-icon></div>
+
+            </div>
+            <div class="detalhesquarto">
+                <div class="option" id="optionmodal">
+                    <div class="imageoption" id="imageoptionmodal" >
+                            <section class="carousel">
+                                <img src="https://img.freepik.com/fotos-gratis/renderizacao-3d-suite-e-banheiro-de-luxo-moderno_105762-1936.jpg?w=996&t=st=1705110990~exp=1705111590~hmac=134933ae9a21e8b9579cb4bdda6cc87bf9e04b4740643009dd52f2a344a48207 " alt="" class="ativo"  >
+                                <img src="https://img.freepik.com/fotos-gratis/cama-de-casal-visto-a-partir-da-cama-do-pe_1203-42.jpg?w=1380&t=st=1705111324~exp=1705111924~hmac=9a945f7d107bd9771b3249c028dce0ddce56811f246568ed4b351b5b66d3d741" alt="">
+                                <img src="https://images.unsplash.com/photo-1587527901949-ab0341697c1e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" >
+                                <img src="https://images.unsplash.com/photo-1630660664869-c9d3cc676880?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" >
+                                <img src="https://images.unsplash.com/photo-1540304453527-62f979142a17?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  >  
+                            </section>
+                        </div>
+
+
+                    <div class="textmodal">  
+                            
+                            <div class="descriptionOption" id="discriptionOptionmodal">
+                                <h3>BANGALÔ FAMÍLIA</h3>
+                                <p>A maioria dos Bangalôs Junior ficam em frente a Piscina</p>
+                                <div class="iconesServicos" id="iconesServicosmodal">
+                                    <span><ion-icon name="cafe-outline"></ion-icon></span><span><ion-icon
+                                            name="wifi-sharp"></ion-icon></span><span><ion-icon
+                                            name="restaurant-sharp"></ion-icon></span><span><ion-icon
+                                            name="call-sharp"></ion-icon></span>
+                                </div>
+                                
+                            </div>  
+                            <div id="valormodal">
+                                <div ></div>
+                                <div id="reservar">
+                                    <input type="button" value="Reservar" class="reservabtn">
+
+                                </div>
+                            </div> 
+                    </div>               
+            </div>
+           
         </div>
-        <button class="fecharmodal">fechar</button>
     </dialog>
 
     </div>
@@ -31,7 +73,7 @@
             <div class="Lista">
                 <li><a href="">Home</a></li>
                 <li><a href="#quartos">Quartos</a></li>
-                <li><a href="#Localizacao" style="transform: 5s;">Onde estamos</a></li>
+                <li><a href="#Localizacao" >Onde estamos</a></li>
                 <li><a href="#espacofooter">Sobre nós</a></li>
 
 
@@ -92,7 +134,7 @@
         </div>
 
         <div class="hospedagens" id="quartos">
-            <h1 id="titulos">Nossos Quartos</h1>
+            <h1 class="titulos">Nossos Quartos</h1>
 
             <div class="espacador">
                 <div></div>
@@ -102,7 +144,7 @@
 
                 <div class="option" id="option1">
                     <div class="imageoption">
-                        <img id="imageoption1"
+                        <img class="imageoption1"
                             src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8="
                             alt="">
                     </div>
@@ -131,7 +173,7 @@
 
                 <div class="option" id="option1">
                     <div class="imageoption">
-                        <img id="imageoption1"
+                        <img class="imageoption1"
                             src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8="
                             alt="">
                     </div>
@@ -162,7 +204,7 @@
 
                 <div class="option" id="option1">
                     <div class="imageoption">
-                        <img id="imageoption1"
+                        <img class="imageoption1"
                             src="https://media.istockphoto.com/id/954121470/pt/foto/cozy-studio-apartment-design-with-bedroom-and-living-space.jpg?s=612x612&w=0&k=20&c=270jeF4oj2pPRodpBUZvfOo14D342tOdhKri8e-GVL8="
                             alt="">
                     </div>
@@ -397,7 +439,8 @@
             <div id="item-1"></div>
             <div id="item-2"></div>
             <div id="item-3">
-                <div class="contentParalax"> <img src="/img/logoHotel.png" alt=""> </div> <span>Bem-vindos à POSEIDON,
+                <div class="contentParalax"> <img src="/SiteHotel/img/logoHotel.png" alt=""> </div> <span>Bem-vindos à
+                    POSEIDON,
                     onde cada experiência é uma jornada única e memorável. Fundada com a visão de oferecer mais do que
                     simples produtos ou serviços, buscamos criar laços duradouros com nossos clientes, proporcionando
                     momentos especiais e soluções que transcendem as expectativas.</span>
@@ -417,7 +460,7 @@
             <div id="item-18"></div>
             <div id="item-19">
                 <div class="contentParalax">
-                    <h1 id="titulos">Instalações e Acomodações</h1>
+                    <h1 class="titulos">Instalações e Acomodações</h1>
                 </div> <span>Cada quarto e suíte em nosso hotel foi projetado com atenção meticulosa aos detalhes,
                     proporcionando um ambiente tranquilo e elegante para a sua estadia. Desfrute de amenidades modernas,
                     camas luxuosas e vistas deslumbrantes do Mar.</span>
@@ -443,7 +486,7 @@
 
         <div class="LocalizacaoContent">
             <div class="descriptionLocalizacao">
-                <h1 id="titulos">Descubra POSEIDON</h1>
+                <h1 class="titulos">Descubra POSEIDON</h1>
                 <span>Descubra POSEIDON
                     Localizado estrategicamente, oferecemos fácil acesso às atrações locais, proporcionando aos nossos
                     hóspedes uma autêntica experiência cultural durante a sua estadia.
@@ -473,9 +516,9 @@
             <div class="h1pagamentos">
                 <h1>Formas de Pagamentos:</h1>
             </div>
-            <div class="iconespagamentos"><img src="/img/Cartões/visa.png" alt="" class="iconefooter"> <img
-                    class="iconefooter" src="/img/Cartões/mastercard.png" alt="">
-                <img src="/img/Cartões/elo.png" alt="" class="iconefooter">
+            <div class="iconespagamentos"><img src="/SiteHotel/img/Cartões/visa.png" alt="" class="iconefooter"> <img
+                    class="iconefooter" src="/SiteHotel/img/Cartões/mastercard.png" alt="">
+                <img src="/SiteHotel/img/Cartões/elo.png" alt="" class="iconefooter">
             </div>
         </div>
         <div class="redessociais">
@@ -483,9 +526,9 @@
                 <h1> Redes Sociais:</h1>
             </div>
             <div class="iconesredesocial">
-                <img src="/img/redesocial/instagram.png" alt="" class="iconefooter">
-                <img class="iconefooter" src="/img/redesocial/x.png" alt="" class="iconefooter">
-                <img src="/img/redesocial/facebook.png" alt="" class="iconefooter">
+                <img src="/SiteHotel/img/redesocial/instagram.png" alt="" class="iconefooter">
+                <img class="iconefooter" src="/SiteHotel/img/redesocial/x.png" alt="" class="iconefooter">
+                <img src="/SiteHotel/img/redesocial/facebook.png" alt="" class="iconefooter">
             </div>
         </div>
 
@@ -495,19 +538,19 @@
 
             <div class="logosites">
 
-                <img src="/img/sites/bokking.png" alt="" class="iconefooter">
-                <img src="/img/sites/hotels.png" alt="" class="iconefooter">
-                <img src="/img/sites/tripadvisor.png" alt="" class="iconefooter">
+                <img src="" alt="" class="iconefooter">
+                <img src="" alt="" class="iconefooter">
+                <img src="" alt="" class="iconefooter">
 
             </div>
 
         </div>
     </footer>
-
+    <script src="/SiteHotel/js/modal.js"></script>
+    <script src="/SiteHotel/js/carrosselmodal.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
-<script src="/js/modal.js"></script>
 
 </html>

@@ -7,7 +7,7 @@
       }
 html{
     width: 100vw;
-    min-height: 120vh;
+    min-height: 100vh;
 }
 body {
     width: 100vw;
@@ -27,8 +27,7 @@ body {
 
 body::-webkit-scrollbar {
     width: 12px;     
-             
-  }
+}
   
   body::-webkit-scrollbar-track {
     background: transparent;        
@@ -39,6 +38,40 @@ body::-webkit-scrollbar {
     border-radius: 20px;      
     border: 3px solid #eff1f3;  
   }
+
+  .modal{
+    margin:  auto;
+    border: 0;
+    width: 50%;
+    height: 80%;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .contentmodal{
+    width: 90%;
+    height: 90%;
+  }
+  .modal::backdrop {
+    background: #318ead6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .fechamodal{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+
+
+  
+
+
 /* ======================================HEADER===============================================*/
 header {
     display: flex;
@@ -111,7 +144,6 @@ header {
     flex-wrap: wrap;
     justify-content: flex-end;
 
-
 }
 
 li {
@@ -150,7 +182,6 @@ li:hover {
     text-align: center;
     font-size: 5ch;
     color: rgb(0, 0, 0);
-    border-bottom: 0.1ch solid rgb(3, 3, 3);
 }
 
 .CampodeFiltro {
@@ -207,6 +238,9 @@ select {
     height: 4ch;
     
 }
+.saibaMaisbtn:hover{
+    background:#318ead8a ;
+}
 
 
 .hospedagens {
@@ -216,7 +250,6 @@ select {
     justify-content: center;
     align-items: center;
     background-color: #eff1f3;
-    position: relative;
 
 }
 
@@ -320,7 +353,6 @@ cursor: pointer;
     width: 100%;
     height: 5ch;
     background-color: #eff1f3;
-    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -337,7 +369,7 @@ cursor: pointer;
     background: transparent;
     display: grid;
 
-    grid-template-columns: 15% 75% 15%;
+    grid-template-columns: 12% 75% 13%;
     justify-content: center;
 }
 .espaco1{
@@ -364,7 +396,6 @@ cursor: pointer;
     margin-top: 2ch;
     color: #318ead;
     font-size: 4ch;  
-     border-bottom: 0.1ch solid #318ead;
 }
 h1{
     color: #318ead;
@@ -574,17 +605,18 @@ align-items: center;
 
 footer {
     width: 100%;
-    height: 50ch;
+    height: 40ch;
     background: #318ead;
     bottom: 0;
-    position: relative;
+    top: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 footer div{
-    width: 25%;
+    width: 15%;
     height: 70%;
     margin: 2ch;
 
@@ -609,6 +641,11 @@ footer h1{
     color: #eff1f3;
     font-size:larger;
 }
+footer img.iconefooter{
+    margin-top: 2ch;
+    height: 30%;
+    width: 20%;
+}
 .formasdepagamentos, .redessociais{
     display: flex;
     flex-direction: column;
@@ -626,7 +663,7 @@ footer h1{
   margin: 0;
 }
 
-.iconespagamentos, .iconesredesocial{
+.iconespagamentos, .iconesredesocial, .logosites{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -641,9 +678,256 @@ footer h1{
      height: 40%;
      padding: 0.5ch;
      object-fit: contain;
+     cursor: pointer;
+
     } 
 
 .redessociais img{
     width:9% ;
     
 }
+
+.logosites{
+
+display: flex;
+justify-content: space-between;
+}
+.logosites img{
+    height: 30%;
+    padding: 0.5ch;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+
+/*Media */
+@media (width < 1920px )  {
+  
+   
+        .hospedagens{
+            justify-content: start;
+            height: 130ch;
+            padding-top: 2ch;
+        }
+
+
+     .optionhospedagens{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+     }
+
+
+}@media (width < 1080px) {
+
+    .hospedagens{
+        justify-content: start;
+        height: 190ch;
+        padding-top: 2ch;
+    }
+    .Localizacao{
+        padding: 3ch;
+        height: 100ch;
+    }
+    #option1{
+        height: 30%;
+    }
+p{
+    font-size: 1.2ch;
+}
+h3{
+    font-size: 12px;
+    }
+ 
+    span{
+        font-size: 13px;
+        height: 90%;
+        width: 100%;
+    }
+    #titulos{
+        height: 3ch;
+        width: 100%;
+        margin: 0;
+        color: #318ead;
+        font-size: 2.5ch;  
+        border: none;
+        margin: 0;
+    
+    }
+    .Localizacao{
+        padding: 3ch;
+        height: 100ch;
+    }
+    .LocalizacaoContent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .LocalizacaoContent .descriptionLocalizacao{
+                width: 100%;
+    }
+    .mapa{
+        width: 100%;
+        height: 70%;
+    }
+}
+
+
+@media (width < 720px) {
+
+    span{
+        font-size: 12px;
+        height: 90%;
+        width: 100%;
+    }
+    #titulos{
+    height: 3ch;
+    width: 100%;
+    margin: 0;
+    color: #318ead;
+    font-size: 2.5ch;  
+    border: none;
+    margin: 0;
+
+}
+
+   #item-4, #item-20, #item-21, #item-27,#item-22{
+    height: 1ch;
+   }
+  #item-3 .contentParalax{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+  #item-3, #item-1{
+    height: 30ch;
+    flex-direction: column;
+
+  }
+  .contentParalax{
+    display: flex;
+
+    justify-content: start;
+  }
+    .contentParalax img{
+        object-fit: cover;
+        height: 100%;
+        width: 80%;
+     }
+   
+    .saibaMaisbtn{
+        font-size: 10px;
+    }
+
+   
+     #option1{
+        width:30%;
+        height: 30%;
+     }
+   
+   
+     #quartos.hospedagens {
+        height: 190ch;
+     }
+
+
+  
+    }
+
+@media (width < 550px) {
+  
+    #quartos.hospedagens{
+        height: 230ch;
+    }
+    #item-3, #item-1{
+        height: 70ch;
+        flex-direction: column;
+    
+      }
+      #item-19{
+        height: 55ch;
+      }
+      #item-26,   #item-18, #item-25, #item-15, #item-22{
+        background-color: transparent;
+      }
+      #item-27,  #item-21{
+        display: none;
+    }
+
+span{
+    height: 100%;
+    font-size: 20px;
+}
+  
+    #option1{
+        width: 80%;
+        height: 20%;
+        margin: 0.5ch;
+     }
+     #option1:hover{
+        transform: translateY(0);
+    }
+  .barradefiltragem{
+    width: 90%;
+    
+  }
+ .barradefiltragem input, .barradefiltragem select{
+    width: 15%;
+ }
+ header {
+    height: 15ch;
+ }
+
+
+
+.Logo {
+    display: flex;
+    min-width: 20%;
+    height: 100%;
+
+
+
+}
+
+.Logo img {
+    width: 100%
+}
+
+#imagemPrincipal {
+    height: 80ch;
+
+}
+li {
+    margin-right: 3ch;
+
+}
+
+
+footer {
+    height: 90ch;
+
+}
+footer div{
+    width: 33%;
+    height: 30%;
+
+
+    
+}
+.logofooter{
+    width: 50%;
+    height: 25%;
+
+}
+
+footer .iconefooter{
+    margin-top: 5ch;
+    width: 60%;
+    height: 45%;
+}
+
+
+}
+

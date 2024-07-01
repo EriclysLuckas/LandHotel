@@ -220,10 +220,12 @@ li {
 }
 
 a {
-    font-size: medium;
     text-decoration: none;
     cursor: pointer;
-    color: #3663BF;
+    color: #18bef5; ;
+    font-weight: 800;
+    
+    font-size: 16px;
 }
 
 li:hover {
@@ -907,8 +909,9 @@ h3{
 
 @media (width < 550px) {
   
+
     #quartos.hospedagens{
-        height: 230ch;
+        height: 100%;
     }
     #item-3, #item-1{
         height: 70ch;
@@ -949,8 +952,13 @@ span{
     height: 15ch;
  }
 
-
-
+.LocalizacaoContent{
+    width: 100%;
+}
+.Lista{
+    display: flex;
+    justify-content: center;
+}
 .Logo {
     display: flex;
     min-width: 20%;
@@ -974,10 +982,6 @@ li {
 }
 
 
-footer {
-    height: 90ch;
-
-}
 footer div{
     width: 33%;
     height: 30%;
@@ -986,15 +990,16 @@ footer div{
     
 }
 .logofooter{
-    width: 50%;
-    height: 25%;
-
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 footer .iconefooter{
-    margin-top: 5ch;
-    width: 60%;
-    height: 45%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
